@@ -2,4 +2,6 @@ streamlit
 pillow
 pikepdf
 comtypes
+pymupdf
 fitz
+
