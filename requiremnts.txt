@@ -1,8 +1,5 @@
 streamlit
 PyPDF2
 openai
-PyMuPDF==1.24.4
+PyMuPDF
 Pillow
-
-
-
