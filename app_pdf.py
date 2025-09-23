@@ -1,5 +1,4 @@
 import streamlit as st
-import pymupdf
 import fitz  # PyMuPDF
 from io import BytesIO
 import zipfile
@@ -53,4 +52,5 @@ if uploaded_files:
             data=zip_buffer.getvalue(),
             file_name="compressed_pdfs.zip"
         )
+
 
