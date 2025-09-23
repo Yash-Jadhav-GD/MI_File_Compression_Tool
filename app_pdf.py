@@ -1,4 +1,6 @@
 import streamlit as st
+import py
+import pymupdf
 import fitz  # PyMuPDF
 from io import BytesIO
 import zipfile
