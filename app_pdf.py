@@ -43,7 +43,7 @@ def compress_pdf_images(file_bytes, quality=30, max_width=1000, grayscale=False)
     return out_bytes
 
 # ---------------- Streamlit UI ----------------
-st.title(" Team PDF Compression Tool")
+st.title("📑PDF Compression Tool")
 st.subheader("(Market Intelligence AI Team)")
 
 aggressiveness = st.slider("Compression Aggressiveness (lower = more compression)", 10, 90, 50)
@@ -77,10 +77,11 @@ if uploaded_files:
         zip_buffer.seek(0)
 
         st.download_button(
-            label="Download All Compressed PDFs (ZIP)",
+            label="📥Download All Compressed PDFs (ZIP)",
             data=zip_buffer.getvalue(),
             file_name="compressed_pdfs.zip"
         )
+
 
 
 
