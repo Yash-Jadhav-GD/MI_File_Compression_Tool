@@ -44,7 +44,7 @@ def compress_pdf_images(file_bytes, quality=30, max_width=1000, grayscale=False)
 
 # ---------------- Streamlit UI ----------------
 st.title(" Team PDF Compression Tool")
-st.str("Market Intelligence AI Team")
+st.subheader("Market Intelligence AI Team")
 
 aggressiveness = st.slider("Compression Aggressiveness (lower = more compression)", 10, 90, 50)
 grayscale_option = st.checkbox("Convert images to grayscale", value=False)
@@ -81,5 +81,6 @@ if uploaded_files:
             data=zip_buffer.getvalue(),
             file_name="compressed_pdfs.zip"
         )
+
 
 
